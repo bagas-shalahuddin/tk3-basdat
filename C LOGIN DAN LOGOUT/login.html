@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class = "login bg-dark justify-content-center" style="height: 100vh; margin: 0;">
+        <br></br>
+        <div class="mx-3 d-flex flex-row flex-wrap justify-content-center">
+        <div class="card mx-auto" style="width: 22rem;">
+            <div class="card-body mx-auto">
+              <h1 class="card-title"><strong>FORM LOGIN</strong></h1>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="">
+        
+                            <a class="text-decoration-none text-dark">Username</a>
+                            <input type="text" name="username" placeholder="Username." class="form-control">
+                        
+                                
+                            <a class="text-decoration-none text-dark">Password</a>
+                            <input type="password" name="password" placeholder="Password." class="form-control">
+        
+                            <div class="div d-flex justify-content-center mt-3">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" type="submit" value="Login">Login</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title text-danger" id="exampleModalLabel">Error</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body text-danger">
+                                    Something went wrong
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                    
+                </form>
+            </div>
+      
+      
+          </div>
+        </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>
