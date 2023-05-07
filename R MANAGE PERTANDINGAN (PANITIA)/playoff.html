@@ -45,7 +45,7 @@
                         <td>28 April 2023, 13:00</td>
                         <td>A</td>
                         <td>
-                          <a class="btn btn-primary" href="#" style="margin-bottom: 2%;">Lihat Peristiwa Tim 1</a><br>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin-bottom: 2%;">Lihat Peristiwa Tim 1</button> <br>
                           <a class="btn btn-primary" href="#" style="margin-bottom: 2%;">Lihat Peristiwa Tim 2</a><br>
                         </td>
                       </tr>
@@ -55,7 +55,7 @@
                         <td>[Waktu Dimulai -5 Menit]</td>
                         <td>-</td>
                         <td>
-                          <a class="btn btn-primary" href="#" style="margin-bottom: 2%;">Mulai</a><br>
+                          <a class="btn btn-success" href="#" style="margin-bottom: 2%;">Mulai</a><br>
                         </td>
                       </tr>
                       <tr>
@@ -76,6 +76,50 @@
           </div>
         </div>
       </div>
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Peristiwa Tim 1</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Nama Pemain</th>
+                    <th>Peristiwa</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Agus</td>
+                    <td>Mendapatkan Kartu Kuning</td>
+                  </tr>
+                  <tr>
+                    <td>Joko</td>
+                    <td>Mendapatkan Kartu Kuning</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        $(document).ready(function(){
+          $("#myButton").click(function(){
+            $("#myModal").show();
+          });
+        });
+        </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
