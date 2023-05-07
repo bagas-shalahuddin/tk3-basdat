@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pembuatan Pertandingan</P></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <div class="d-flex justify-content-between px-3 w-100">
+            <div class="d-flex flex-grow-1 flex-shrink-0">
+                <a class="btn" href="#">Dashboard</a>
+                <a class="btn" href="#">Rapat</a>
+                <a class="btn" href="#">Manage Pertandingan</a>
+            </div>
+            <div class="d-flex justify-content-end w-100">
+                <a class="btn btn-outline-danger d-block" href="#">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="card mx-auto mt-4">
+                <div class="card-body">
+                  <h5 class="card-title">LIST PERTANDINGAN</h5>
+                  <table class="table table-stripped">
+                    <thead>
+                      <tr>
+                        <th>Grup A</th>
+                        <th>Action</th>
+                        <th>Grup B</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>A VS B</td>
+                        <td><button class="btn btn-sm btn-primary" style="margin-right: 2%;">Update</button> <button class="btn btn-sm btn-danger">Delete</button></td>
+                        <td>I VS J</td>
+                        <td><button class="btn btn-sm btn-primary" style="margin-right: 2%;">Update</button> <button class="btn btn-sm btn-danger">Delete</button></td>
+                      </tr>
+                      <tr>
+                        <td>C VS D</td>
+                        <td><button class="btn btn-sm btn-primary" style="margin-right: 2%;">Update</button> <button class="btn btn-sm btn-danger">Delete</button></td>
+                        <td>K VS L</td>
+                        <td><button class="btn btn-sm btn-primary" style="margin-right: 2%;">Update</button> <button class="btn btn-sm btn-danger">Delete</button></td>
+                      </tr>
+                      <tr>
+                        <td>E VS F</td>
+                        <td><button class="btn btn-sm btn-primary" style="margin-right: 2%;">Update</button> <button class="btn btn-sm btn-danger">Delete</button></td>
+                        <td>M VS N</td>
+                        <td><button class="btn btn-sm btn-primary" style="margin-right: 2%;">Update</button> <button class="btn btn-sm btn-danger">Delete</button></td>
+                      </tr>
+                      <tr>
+                        <td>G VS H</td>
+                        <td><button class="btn btn-sm btn-primary" style="margin-right: 2%;">Update</button> <button class="btn btn-sm btn-danger">Delete</button></td>
+                        <td>? VS ?</td>
+                        <td> <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#exampleModal"> Add </button></td>
+                      </tr>
+                      <tr>
+                        <th>Grup C</th>
+                        <th>Action</th>
+                        <th>Grup D</th>
+                        <th>Action</th>
+                        
+                      </tr>
+                      <tr>
+                        <td>? VS ?</td>
+                        <td> <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#exampleModal"> Add </button></td>
+                        <td>? VS ?</td>
+                        <td> <button class="btn btn-sm btn-success" style="margin-right: 2%;">Add</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal"  id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">BUAT PERTANDINGAN</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="wasit-utama">Pilih Wasit Utama:</label>
+                <select class="form-control" id="wasit-utama">
+                  <option value="">-- Pilih Wasit Utama --</option>
+                  <option value="wasit1">Aprisman Aranda</option>
+                  <option value="wasit2">Fariq Hitaba</option>
+                  <option value="wasit3">Thoriq Munir Alkatiri </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="wasit-pembantu1">Pilih Wasit Pembantu/Hakim Garis:</label>
+                <select class="form-control" id="wasit-pembantu1">
+                  <option value="">-- Pilih Wasit Pembantu/Hakim Garis --</option>
+                  <option value="wasit4">Yudi Nurcahya</option>
+                  <option value="wasit5">Dwi Purba Adi Wicaksana</option>
+                  <option value="wasit6">Pierluigi Collina</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="wasit-pembantu2">Pilih Wasit Pembantu/Hakim Garis:</label>
+                <select class="form-control" id="wasit-pembantu2">
+                  <option value="">-- Pilih Wasit Pembantu/Hakim Garis --</option>
+                  <option value="wasit7">Nicola Rizzola</option>
+                  <option value="wasit8">Sandor Puhl</option>
+                  <option value="wasit9">Kim Milton Nielsen</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="wasit-cadangan">Pilih Wasit Cadangan:</label>
+                <select class="form-control" id="wasit-cadangan">
+                  <option value="">-- Pilih Wasit Cadangan --</option>
+                  <option value="wasit10">Howard Webb</option>
+                <option value="wasit11">Alireza Saghani</option>
+                <option value="wasit12">Rysbek Shekerbekov </option>
+                </select>
+              </div>
+              <div class="form-group row">
+                <div class="col">
+                  <label for="tim1">Tim 1:</label>
+                  <select class="form-control" id="tim1">
+                    <option value="">-- Pilih Tim --</option>
+                    <option value="tim1a">Tim A</option>
+                <option value="tim1b">Tim B</option>
+                <option value="tim1c">Tim C</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="tim2">Tim 2:</label>
+                  <select class="form-control" id="tim2">
+                    <option value="">-- Pilih Tim --</option>
+                    <option value="tim1a">Tim A</option>
+                <option value="tim1b">Tim B</option>
+                <option value="tim1c">Tim C</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" id="submitBtn">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="modal"  tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">List Waktu Stadium GBK</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Waktu</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>11.00 - 13.00</td>
+                    <td>Dipesan</td>
+                  </tr>
+                  <tr>
+                    <td>07.00 - 09.00</td>
+                    <td><a href="#" class="btn btn-primary">Next</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal -->
+<div class="modal fade"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">PEMBUATAN PERTANDINGAN</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="stadium-select">Stadium:</label>
+          <select class="form-control" id="stadium-select">
+            <option>Stadium GBK</option>
+            <option>Stadium JIS</option>
+            <option>Stadium Maguwoharjo</option>
+            <option>Stadium Kanjuruhan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date-picker">Tanggal:</label>
+          <input type="date" class="form-control" id="date-picker">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script>
+        $(document).ready(function(){
+          $("#myButton").click(function(){
+            $("#exampleModal").show();
+          });
+        });
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
